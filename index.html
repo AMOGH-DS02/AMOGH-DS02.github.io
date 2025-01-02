@@ -7,49 +7,53 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
+            margin: 0;
+            padding: 0;
             background-color: #f0f0f0;
             color: #333;
         }
         header {
             background-color: #333;
             color: white;
-            padding: 20px 0;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #1a73e8;
+        }
+        section {
+            padding: 50px 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         footer {
             background-color: #333;
             color: white;
             padding: 10px 0;
+            text-align: center;
             position: fixed;
             width: 100%;
             bottom: 0;
         }
-        .content {
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
         a {
             color: #1a73e8;
-            text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
-        }
-        button {
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
@@ -57,14 +61,31 @@
     <header>
         <h1>Welcome to My GitHub Page</h1>
     </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
     
-    <div class="content">
-        <p>This is my first webpage hosted on GitHub Pages! I'm excited to share my projects and ideas here.</p>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Hi, I am Amogh Parwatkar, a student from M.Sc. Data Science Part 1, studying at Goa University, Taleigao Plateau. This is my first webpage hosted on GitHub Pages! I'm excited to share my projects and ideas here.</p>
         <p>Feel free to browse through the content and explore my other pages.</p>
-        <a href="https://amogh-ds02.github.io/AMOGH_DS02-2.github/" class="button">
-            <button>Go to Next Page</button>
-        </a>
-    </div>
+    </section>
+    
+    <section id="about">
+        <h2>About</h2>
+        <p>Address: Paroda, Quepem, Goa</p>
+        <p>Student of Soft Engineering, managed by Sir Jarret Fernandes.</p>
+        <p>I'm passionate about Data Science and Software Engineering. In my free time, I love exploring new technologies and contributing to open-source projects.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mscds.2402@unigoa.ac.in">mscds.2402@unigoa.ac.in</a></p>
+        <p>Feel free to reach out for collaborations or if you have any questions!</p>
+    </section>
     
     <footer>
         <p>&copy; 2025 My GitHub Page | Designed by Me</p>
